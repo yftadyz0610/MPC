@@ -10,11 +10,11 @@ We use Amazon Fine Food Reviews as corpus, and total 7,292 adjectives are extrac
 
 ### Performance
 
-The below table shows averaged F1 scores after 3,4,5 iterations. **ENTROPY** outperforms the other three, achieving the highest Mental F1 **0.72** and Physical F1 **0.87** at iteration 4. The BERT checkpoint of ENTROPY at iteration 4 is used in the final inference pipeline.
+The below table shows averaged `F1 scores` after 3,4,5 iterations. **ENTROPY** outperforms the other three, achieving the highest Mental F1 **0.72** and Physical F1 **0.87** at iteration 4. The BERT checkpoint of ENTROPY at iteration 4 is used in the final inference pipeline.
 
 <img src="docs/mpc_lexical_result.png" width = 1400 height = 200>
 
-ENTROPY requires only 60~70 labeled words for training per iteration, which means totally around 300 samples are needed to deliver an applicable classifier.
+ENTROPY requires only **60~70** labeled words for training per iteration, which means totally around **300** samples are needed to deliver an applicable classifier.
 
 <img src="docs/mpc_word_anno_cnt.png" width = 750 height = 200>
 
@@ -31,6 +31,6 @@ TBA.
 MPC task is implemented directly on a word's senses, whose definition is provided by WordNet. Currently, we focus only on adjectives and verbs in WordNet. Nouns are not included as they have perfect hierarchical organization in WordNet. The best inference result is [ment_phy_net_v2.csv](sense_level/ment_phy_net_v2.csv).
 
 ### Performance
-In each iteration, 20 positive and 20 negative samples with highest entropy are selected from adjectives and verbs. The below table shows Precision, Recall and F1 scores at each iteration. Overall, iteration 6 achieves the best performance. The BERT checkpoint at iteration 6 is used in the final inference pipeline.
+In each iteration, 20 positive and 20 negative samples with highest entropy are selected from adjectives and verbs. The below table shows `Precision, Recall and F1 scores` at each iteration. Overall, **iteration 6** achieves the best performance. The BERT checkpoint at iteration 6 is used in the final inference pipeline.
 
 <img src="docs/mpc_sense_result.png" width = 1400 height = 300>
