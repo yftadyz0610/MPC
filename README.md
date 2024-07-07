@@ -12,7 +12,7 @@ We use Amazon Fine Food Reviews as corpus, and total 7,292 adjectives are extrac
 
 The below table shows averaged `F1 scores` after 3,4,5 iterations. **ENTROPY** outperforms the other three, achieving the highest Mental F1 **0.72** and Physical F1 **0.87** at iteration 4. The BERT checkpoint of ENTROPY at iteration 4 is used in the final inference pipeline.
 
-<img src="docs/mpc_lexical_result.png" width = 1400 height = 200>
+<img src="docs/mpc_lexical_result.png" width = 1400 height = 150>
 
 ENTROPY requires only **60~70** labeled words for training per iteration, which means totally around **300** samples are needed to deliver an applicable classifier.
 
