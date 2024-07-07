@@ -33,4 +33,4 @@ MPC task is implemented directly on a word's senses, whose definition is provide
 ### Performance
 In each iteration, 20 positive and 20 negative samples with highest entropy are selected from adjectives and verbs. The below table shows `Precision, Recall and F1 scores` at each iteration. Overall, **iteration 6** achieves the best performance. The BERT checkpoint at iteration 6 is used in the final inference pipeline.
 
-<img src="docs/mpc_sense_result.png" width = 1400 height = 300>
+<img src="docs/mpc_sense_result.png" width = 1400 height = 250>
