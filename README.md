@@ -4,7 +4,7 @@ Classify a semantic concept as **Mental** or **Physical**. Mental concepts relat
 
 # Word-Level Inference
 
-Implement MPC at word-level. We propose an active learning framework to train a BERT model with very low annotation resources. Four active learning strategies are compared: **Entropy**, **CORESET**, **CAL** and **RANDOM**.
+Implement MPC at word-level. We propose an active learning framework to train a BERT model with very low annotation resources. Four active learning strategies are compared: **Entropy**, **CORESET**, **CAL** and **RANDOM**. More details are explained in this paper: <https://arxiv.org/abs/2307.11767>
 
 We use Amazon Fine Food Reviews as corpus, and total 7,292 adjectives are extracted out for inference. Inferred result with Entropy strategy is [infer_mental_adj.json](infer_mental_adj.json).
 
